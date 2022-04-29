@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="portrait">
 
     <ImageView
-        android:id="@+id/imageView3"
         android:layout_width="526dp"
         android:layout_height="826dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/registerback" />
+        app:srcCompat="@drawable/registerback"
+        android:contentDescription="background"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/setDetailsBtn"
@@ -26,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newPass"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.388"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/newEmail"
@@ -42,7 +45,9 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
+        app:layout_constraintVertical_bias="0.552"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/newName"
@@ -60,7 +65,9 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintVertical_bias="0.473"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/newPass"
@@ -76,6 +83,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/newEmail"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

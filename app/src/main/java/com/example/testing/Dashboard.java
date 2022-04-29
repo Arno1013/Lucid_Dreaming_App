@@ -14,17 +14,14 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextClock;
-import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class Dashboard extends AppCompatActivity {
-    TextView message;
     TimePicker alarmTime;
     TextClock currentTime;
     Button setAlarm, stopAlarm, changeRing, logout;
@@ -39,7 +36,6 @@ public class Dashboard extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(Dashboard.this, "My Notification");
         NotificationManagerCompat managerCompat = NotificationManagerCompat.from(Dashboard.this);
 
-        message = findViewById(R.id.welcomeMessage);
         currentTime = findViewById(R.id.currentTime);
         stopAlarm = findViewById(R.id.stopAlarm);
         setAlarm = findViewById(R.id.setAlarm);

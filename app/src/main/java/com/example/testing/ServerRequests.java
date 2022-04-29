@@ -20,7 +20,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 public class ServerRequests {
-    ProgressDialog progress;
+    final ProgressDialog progress;
     public static final String SERVER_ADDRESS = "https://luciddreaminguserdatabase.000webhostapp.com/";
 
     public ServerRequests(Context context){
@@ -42,9 +42,10 @@ public class ServerRequests {
 
     @SuppressLint("StaticFieldLeak")
     public class StoreUserDataAsyncTask extends AsyncTask<Void, Void, Void>{
-        User user;
-        GetUserCallback userCallback;
+        final User user;
+        final GetUserCallback userCallback;
 
+        @SuppressWarnings("deprecation")
         public StoreUserDataAsyncTask(User user, GetUserCallback callBack){
             this.user = user;
             this.userCallback = callBack;
@@ -89,9 +90,10 @@ public class ServerRequests {
 
     @SuppressLint("StaticFieldLeak")
     public class FetchUserDataAsyncTask extends AsyncTask<Void, Void, User> {
-        User user;
-        GetUserCallback userCallback;
+        final User user;
+        final GetUserCallback userCallback;
 
+        @SuppressWarnings("deprecation")
         public FetchUserDataAsyncTask(User user, GetUserCallback callBack) {
             this.user = user;
             this.userCallback = callBack;

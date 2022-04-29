@@ -8,17 +8,17 @@
     android:screenOrientation="portrait">
 
     <ImageView
-        android:id="@+id/imageView5"
         android:layout_width="523dp"
         android:layout_height="871dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/titleback" />
+        app:srcCompat="@drawable/titleback"
+        android:contentDescription="background"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="312dp"
         android:layout_height="163dp"
         android:fontFamily="sans-serif-condensed"
@@ -33,14 +33,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintVertical_bias="0.675"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="178dp"
         android:layout_height="50dp"
         android:backgroundTint="#519A85"
-        android:onClick="launchLogin"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,14 +48,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.79"
-        tools:ignore="UsingOnClickInXml" />
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/createBtn"
         android:layout_width="178dp"
         android:layout_height="50dp"
         android:backgroundTint="#519A85"
-        android:onClick="launchCreate"
         android:text="Create Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,6 +62,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn"
         app:layout_constraintVertical_bias="0.421"
-        tools:ignore="UsingOnClickInXml" />
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

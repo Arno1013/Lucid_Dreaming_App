@@ -18,7 +18,8 @@
         app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="HardcodedText" />
 
     <TextClock
         android:id="@+id/currentTime"
@@ -40,7 +41,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.716"
-        app:srcCompat="@drawable/dashback" />
+        app:srcCompat="@drawable/dashback"
+        android:contentDescription="background"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btnSelRingtone"
@@ -54,7 +57,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
+        app:layout_constraintVertical_bias="0.939"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/setAlarm"
@@ -67,7 +71,8 @@
         app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        app:layout_constraintVertical_bias="0.811"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/stopAlarm"
@@ -80,7 +85,8 @@
         app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        app:layout_constraintVertical_bias="0.811"
+        tools:ignore="HardcodedText" />
 
     <TimePicker
         android:id="@+id/configAlarm"
@@ -108,10 +114,10 @@
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.024"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/welcomeMessage2"
         android:layout_width="193dp"
         android:layout_height="114dp"
         android:text="lucid alarm"
@@ -123,6 +129,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.134"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
